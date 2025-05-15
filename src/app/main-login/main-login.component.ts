@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+
 
 @Component({
   selector: 'app-main-login',
    standalone: true,
-  imports: [],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './main-login.component.html',
-  styleUrl: './main-login.component.scss'
+  styleUrls: ['./main-login.component.scss']
+
 })
 export class MainLoginComponent {
 

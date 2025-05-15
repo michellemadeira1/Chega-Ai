@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-morador',
-   standalone: true,
+  selector: 'app-encomendas',
   imports: [RouterLink, RouterLinkActive],
-  templateUrl: './morador.component.html',
-  styleUrl: './morador.component.scss'
+  templateUrl: './encomendas.component.html',
+  styleUrl: './encomendas.component.scss'
 })
-export class MoradorComponent {
+export class EncomendasComponent {
 
 }
