@@ -6,14 +6,16 @@ import { MoradorComponent } from "./morador/morador.component";
 import { MainLoginComponent } from "./main-login/main-login.component";
 import { EncomendasComponent } from "./encomendas/encomendas.component";
 import { CadastroComponent } from "./cadastro/cadastro.component";
+import { IndexComponent } from './landing/index/index.component';
 
 export const routes: Routes = [
-   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'login',  component: LoginComponent },
-  { path: 'mainLogin',  component: MainLoginComponent },
-  { path: 'morador', component: MoradorComponent },
-  { path: 'entregas', component: EntregasComponent },
-  { path: 'encomenda', component:  EncomendasComponent },
-   { path: 'cadastro', component:  CadastroComponent  }
+   { path: '', redirectTo: 'index', pathMatch: 'full' },
+  { path: 'index', component: IndexComponent },
+//   { path: 'home', component: HomeComponent },
+//   { path: 'login',  component: LoginComponent },
+//   { path: 'mainLogin',  component: MainLoginComponent },
+//   { path: 'morador', component: MoradorComponent },
+//   { path: 'entregas', component: EntregasComponent },
+//   { path: 'encomenda', component:  EncomendasComponent },
+   // { path: 'cadastro', component:  CadastroComponent  }
 ];
