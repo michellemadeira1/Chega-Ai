@@ -1,21 +1,21 @@
 @import '../../styles/reset';
-@import '../../styles/base';
 @import '../../styles/variables';
+@import '../../styles/base';
 
 /* Header Styles */
 .header {
-  background-color: var(--card-bg);
-  box-shadow: var(--box-shadow);
+  background-color: $card-bg;
+  box-shadow: $box-shadow;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
   padding: 15px 0;
-  transition: var(--transition);
+  transition: $transition;
 
   &.header-scrolled {
     padding: 10px 0;
-    background-color: rgba(248, 249, 250, 0.95); // Usando --light com alpha
+    background-color: rgba(248, 249, 250, 0.95); // $light com alpha
   }
 
   .header-content {
@@ -27,7 +27,7 @@
   .logo {
     img {
       height: 40px;
-      border-radius: var(--border-radius);
+      border-radius: $border-radius;
     }
   }
 
@@ -36,7 +36,7 @@
     font-size: 24px;
     background: none;
     border: none;
-    color: var(--dark);
+    color: $dark;
     cursor: pointer;
   }
 
@@ -47,31 +47,31 @@
   }
 
   .nav-link {
-    color: var(--dark);
+    color: $dark;
     text-decoration: none;
     font-weight: 500;
-    transition: var(--transition);
+    transition: $transition;
 
     &:hover {
-      color: var(--primary);
+      color: $primary;
     }
   }
 
   .btn-primary {
-    background-color: var(--primary);
-    color: var(--card-bg);
+    background-color: $primary;
+    color: $card-bg;
     padding: 10px 24px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
-    transition: var(--transition);
+    transition: $transition;
     border: none;
     cursor: pointer;
     display: inline-block;
     box-shadow: 0 2px 10px rgba(248, 165, 85, 0.3); // Sombra com a cor primária
 
     &:hover {
-      background-color: var(--primary-dark);
+      background-color: $primary-dark;
       transform: translateY(-2px);
       box-shadow: 0 4px 15px rgba(238, 94, 22, 0.4); // Sombra com a cor primária escura
     }
