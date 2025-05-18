@@ -1,0 +1,67 @@
+@import '../../styles/main';
+
+.how-it-works {
+  padding: 80px 0;
+  background-color: $bg;
+
+  .steps-container {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      position: relative;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .step-number {
+        width: 50px;
+        height: 50px;
+        background-color: $primary;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $card-bg;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-right: 20px;
+        flex-shrink: 0;
+      }
+
+      .step-content {
+        flex: 1;
+
+        h3 {
+          margin-bottom: 10px;
+          color: $dark;
+          font-size: 1.2rem;
+        }
+
+        p {
+          color: $gray;
+          font-size: 0.95rem;
+        }
+      }
+
+      .step-connection {
+        position: absolute;
+        left: 25px;
+        top: 50px;
+        bottom: -40px;
+        width: 2px;
+        background-color: $primary;
+      }
+
+      &:last-child {
+        .step-connection {
+          display: none;
+        }
+      }
+    }
+  }
+}
