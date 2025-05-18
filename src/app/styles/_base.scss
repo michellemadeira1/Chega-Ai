@@ -1,11 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  color: var(--dark); // Usando --dark para o texto principal
-  background: var(--bg); // Usando --bg para o fundo
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  color: var($dark);
+  overflow-x: hidden;
 }
