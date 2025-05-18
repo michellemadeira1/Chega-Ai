@@ -92,46 +92,73 @@ body {
   }
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-  padding: 100px 0 50px;
+  position: relative; // Importante para que a imagem absoluta seja posicionada em relação a esta seção
+  color: var(--light);
   text-align: center;
-  position: relative;
+  padding: 160px 20px 100px;
+  overflow: hidden; // Oculta qualquer parte da imagem que ultrapasse os limites
+
+  .hero-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // Garante que a imagem cubra todo o espaço sem distorcer muito
+    z-index: -1; // Coloca a imagem atrás do conteúdo (texto e botões)
+  }
 
   .hero-content {
+    position: relative; // Importante para que o conteúdo fique na frente da imagem com z-index
     max-width: 800px;
     margin: 0 auto;
 
     h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      font-weight: 700;
     }
 
     h2 {
-      font-size: 24px;
+      font-size: 1.6rem;
       margin-bottom: 20px;
-      color: $gray;
+      font-weight: 600;
+      color: var(--warning); // Usando --warning como destaque no hero
     }
 
     p {
+      font-size: 1.1rem;
       margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
     }
 
     .hero-buttons {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 15px;
+      flex-wrap: wrap;
     }
   }
+}
 
-  .hero-background-image {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    height: auto;
-    z-index: -1;
-    opacity: 0.2;
+.btn-secondary {
+  background-color: transparent;
+  color: var(--light);
+  border: 2px solid var(--light);
+  padding: 10px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+
+  &:hover {
+    background-color: rgba(248, 249, 250, 0.2); // --light com alpha
+    transform: translateY(-2px);
   }
 }
 
