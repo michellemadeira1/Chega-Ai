@@ -9,8 +9,8 @@ import { CadastroComponent } from "./cadastro/cadastro.component";
 import { IndexComponent } from './landing/index/index.component';
 
 export const routes: Routes = [
-   { path: '', redirectTo: 'index', pathMatch: 'full' },
-  { path: 'index', component: IndexComponent },
+  //  { path: '', redirectTo: 'index', pathMatch: 'full' },
+  { path: '', component: IndexComponent },
 //   { path: 'home', component: HomeComponent },
 //   { path: 'login',  component: LoginComponent },
 //   { path: 'mainLogin',  component: MainLoginComponent },
