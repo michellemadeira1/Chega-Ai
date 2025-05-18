@@ -4,6 +4,32 @@
   padding: 80px 0;
   background-color: $bg;
 
+  .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+
+    h2 {
+      font-size: 2rem;
+      color: $dark;
+      font-weight: 600;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 10px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background-color: $primary;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
   .form-container {
     max-width: 600px;
     margin: 0 auto;

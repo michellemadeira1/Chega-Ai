@@ -11,6 +11,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
     margin-bottom: 40px;
+    margin-left: 40px;
   }
 
   .footer-logo {
@@ -37,6 +38,7 @@
       display: inline-block;
       padding-bottom: 10px;
       color: $light;
+      font-weight: 600;
 
       &::after {
         content: '';
@@ -77,6 +79,23 @@
     margin-bottom: 20px;
     display: flex;
     align-items: flex-start;
+
+    p {
+      color: $light;
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $light;
+      font-size: 0.9rem;
+
+      &:hover {
+        opacity: 1;
+        color: $primary;
+      }
+    }
 
     i {
       margin-right: 10px;
