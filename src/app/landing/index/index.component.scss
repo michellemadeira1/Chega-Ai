@@ -1,1 +1,6 @@
-@import './styles/variables';
+@import '../../styles/reset';
+@import '../../styles/variables';
+
+p{
+    border: 1px solid $primary;
+}
