@@ -5,11 +5,12 @@ import { BenefitsComponent } from "../benefits/benefits.component";
 import { HowworksComponent } from '../howworks/howworks.component';
 import { AboutComponent } from '../about/about.component';
 import { ContactComponent } from '../contact/contact.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-index',
   standalone: true,
-  imports: [HeaderComponent, HeroComponent, BenefitsComponent, HowworksComponent, AboutComponent, ContactComponent],
+  imports: [HeaderComponent, HeroComponent, BenefitsComponent, HowworksComponent, AboutComponent, ContactComponent, FooterComponent],
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.scss']
 })
