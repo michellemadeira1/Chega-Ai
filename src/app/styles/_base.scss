@@ -1,0 +1,35 @@
+.btn-primary {
+    background-color: $primary;
+    color: $card-bg;
+    padding: 10px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: $transition;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 2px 10px rgba(248, 165, 85, 0.3); // Sombra com a cor primária
+
+    &:hover {
+      background-color: $primary-dark;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(238, 94, 22, 0.4); // Sombra com a cor primária escura
+    }
+  }
+
+.btn-secondary {
+    background-color: transparent;
+    color: $light;
+    border: 2px solid $light;
+    padding: 10px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: $transition;
+
+    &:hover {
+      background-color: rgba(248, 249, 250, 0.2); // $light com alpha
+      transform: translateY(-2px);
+    }
+  }
