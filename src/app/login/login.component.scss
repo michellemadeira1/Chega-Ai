@@ -1,14 +1,5 @@
 @import '../styles/main';
 
-// Variáveis
-$primary-color: #2a9d8f;
-$secondary-color: #264653;
-$error-color: #e63946;
-$success-color: #2a9d8f;
-$text-color: #333;
-$background-light: #f4f4f4;
-$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 // Layout principal
 .login-page {
   display: flex;
@@ -36,7 +27,7 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: $secondary-color;
+      color: $secondary-dark;
     }
 
     p {
@@ -63,7 +54,7 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin-bottom: 1.5rem;
 
       h2 {
-        color: $primary-color;
+        color: $secondary;
         margin-bottom: 0.5rem;
       }
 
@@ -92,7 +83,7 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             outline: none;
 
             &:focus {
-              border-color: $primary-color;
+              border-color: $secondary;
             }
           }
 
@@ -118,19 +109,19 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           gap: 0.5rem;
 
           input {
-            accent-color: $primary-color;
+            accent-color: $secondary;
           }
         }
 
         .link {
-          color: $primary-color;
+          color: $secondary;
           cursor: pointer;
           text-decoration: underline;
         }
       }
 
       .btn-primary {
-        background: $primary-color;
+        background: $secondary;
         color: white;
         padding: 0.75rem;
         border: none;
@@ -138,10 +129,10 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 100%;
         font-weight: bold;
         cursor: pointer;
-        transition: background 0.3s ease;
+        transition: $secondary 0.3s ease;
 
         &:hover {
-          background: darken($primary-color, 10%);
+          background: darken($secondary, 10%);
         }
       }
     }
@@ -181,7 +172,7 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin-top: 1rem;
 
       .link {
-        color: $primary-color;
+        color: $secondary;
         cursor: pointer;
         font-weight: bold;
       }
@@ -194,11 +185,11 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
       i {
         margin-right: 0.5rem;
-        color: $primary-color;
+        color: $secondary;
       }
 
       .link {
-        color: $primary-color;
+        color: $secondary;
         text-decoration: underline;
         cursor: pointer;
       }
@@ -213,13 +204,13 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       gap: 0.5rem;
 
       &.error {
-        background: lighten($error-color, 35%);
-        color: $error-color;
+        background: lighten($danger, 35%);
+        color: $danger;
       }
 
       &.success {
-        background: lighten($success-color, 35%);
-        color: $success-color;
+        background: lighten($success, 35%);
+        color: $success;
       }
 
       &.hidden {
@@ -264,7 +255,7 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     h3 {
       margin-bottom: 1rem;
-      color: $secondary-color;
+      color: $secondary;
     }
 
     p {
@@ -300,7 +291,7 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
 
       .btn-primary {
-        background: $primary-color;
+        background: $secondary;
         color: white;
         padding: 0.75rem;
         border: none;
@@ -310,7 +301,7 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         cursor: pointer;
 
         &:hover {
-          background: darken($primary-color, 10%);
+          background: darken($secondary, 10%);
         }
       }
     }
