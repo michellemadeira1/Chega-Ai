@@ -51,21 +51,5 @@
     gap: 15px;
     flex-wrap: wrap;
   }
-
-  .btn-secondary {
-    background-color: transparent;
-    color: $light;
-    border: 2px solid $light;
-    padding: 10px 24px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: $transition;
-
-    &:hover {
-      background-color: rgba(248, 249, 250, 0.2); // $light com alpha
-      transform: translateY(-2px);
-    }
-  }
 }
 
