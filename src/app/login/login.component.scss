@@ -1,4 +1,4 @@
-// @import '../styles/main';
+@import '../styles/main';
 
 // Variáveis
 $primary-color: #2a9d8f;
@@ -314,5 +314,34 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
       }
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .login-page {
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  .login-image {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 25px 20px;
+  }
+
+  .login-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions a {
+    align-self: center;
   }
 }
