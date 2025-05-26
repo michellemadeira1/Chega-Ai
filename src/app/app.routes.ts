@@ -13,9 +13,9 @@ export const routes: Routes = [
   { path: '', component: IndexComponent },
 //   { path: 'home', component: HomeComponent },
   { path: 'login',  component: LoginComponent },
-  // { path: 'mainLogin',  component: MainLoginComponent },
-//   { path: 'morador', component: MoradorComponent },
-//   { path: 'entregas', component: EntregasComponent },
-//   { path: 'encomenda', component:  EncomendasComponent },
-   // { path: 'cadastro', component:  CadastroComponent  }
+  { path: 'mainLogin',  component: MainLoginComponent },
+  { path: 'morador', component: MoradorComponent },
+  { path: 'entregas', component: EntregasComponent },
+  { path: 'encomenda', component:  EncomendasComponent },
+  { path: 'cadastro', component:  CadastroComponent  }
 ];
