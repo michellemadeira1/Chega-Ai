@@ -1,5 +1,4 @@
-<body>
-  <aside class="sidebar">
+<aside class="sidebar">
     <button class="sidebar-toggle" id="sidebar-toggle">
       <i data-feather="chevron-left"></i>
     </button>
@@ -8,24 +7,24 @@
       <h2>Gestão</h2>
     </div>
     <nav>
-      <a routerLink="/mainLogin" class="active">
+      <a href="" class="active">
         <i data-feather="home"></i>
         <span>Início</span>
       </a>
-      <a routerLink="/morador" >
+      <a href="/morador">
         <i data-feather="users"></i>
         <span>Moradores</span>
       </a>
-      <a  routerLink="/encomenda">
+      <a href="/encomenda">
         <i data-feather="package"></i>
         <span>Encomendas</span>
       </a>
-      <a  routerLink="/entregas">
+      <a href="notificacoes.html">
         <i data-feather="bell"></i>
-        <span>Entregas</span>
+        <span>Notificações</span>
       </a>
     </nav>
-
+    
     <div class="user-profile">
       <div class="user-avatar">P</div>
       <div class="user-info">
@@ -41,24 +40,24 @@
         <i data-feather="menu"></i>
       </button>
     </div>
-
+    
     <div class="top-bar">
       <div class="search-container">
         <i data-feather="search" size="18"></i>
         <input type="text" placeholder="Pesquisar...">
       </div>
-
+      
       <div class="notification-icon">
         <i data-feather="bell" size="20"></i>
         <span class="notification-badge">3</span>
       </div>
     </div>
-
+    
     <header>
       <h1>Dashboard de Encomendas</h1>
       <p>Bem-vindo ao sistema de gestão de encomendas do condomínio.</p>
     </header>
-
+    
     <div class="dashboard-summary">
       <div class="summary-card">
         <div class="card-header">
@@ -72,7 +71,7 @@
           <i data-feather="arrow-down" size="14"></i> 8% em relação à semana passada
         </div>
       </div>
-
+      
       <div class="summary-card">
         <div class="card-header">
           <div class="card-icon">
@@ -85,7 +84,7 @@
           <i data-feather="arrow-up" size="14"></i> 12% em relação à semana passada
         </div>
       </div>
-
+      
       <div class="summary-card">
         <div class="card-header">
           <div class="card-icon">
@@ -99,15 +98,15 @@
         </div>
       </div>
     </div>
-
+    
     <div class="recent-deliveries">
       <div class="section-header">
         <h3 class="section-title">Encomendas Recentes</h3>
-        <a href="encomendas.html" class="view-all">
+        <a href="/encomenda" class="view-all">
           Ver tudo <i data-feather="chevron-right" size="16"></i>
         </a>
       </div>
-
+      
       <table class="deliveries-table">
         <thead>
           <tr>
@@ -192,33 +191,8 @@
   </main>
 
   <div class="logout-container">
-  <a href="login.html" class="logout-button">
+  <a href="/login" class="logout-button">
     <i data-feather="log-out"></i>
     <span>Sair</span>
   </a>
 </div>
-
-  <script>
-    feather.replace();
-
-    // Adicionar funcionalidade ao botão de toggle do sidebar
-    document.getElementById('sidebar-toggle').addEventListener('click', function() {
-      document.body.classList.toggle('collapsed-sidebar');
-
-      // Alternar o ícone do botão
-      const icon = this.querySelector('i');
-      if (document.body.classList.contains('collapsed-sidebar')) {
-        icon.setAttribute('data-feather', 'chevron-right');
-      } else {
-        icon.setAttribute('data-feather', 'chevron-left');
-      }
-      feather.replace();
-    });
-
-    // Funcionalidade para telas móveis
-    document.querySelector('.mobile-toggle-btn')?.addEventListener('click', function() {
-      document.querySelector('.sidebar').classList.toggle('active');
-    });
-  </script>
-</body>
-
